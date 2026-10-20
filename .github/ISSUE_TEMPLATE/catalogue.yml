@@ -1,0 +1,24 @@
+name: "Catalogue correction / 索引信息更正"
+description: "Correct paper metadata, publication history or a broken catalogue link."
+title: "[Catalogue] "
+body:
+  - type: markdown
+    attributes:
+      value: "For mathematical questions or manuscript corrections, use the paper's own repository. / 数学内容的问题与稿件勘误，请到对应论文仓库反馈。"
+  - type: input
+    id: paper
+    attributes:
+      label: "Paper ID or record URL / 论文编号或记录链接"
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: "Incorrect information or broken link / 错误信息或失效链接"
+    validations:
+      required: true
+  - type: textarea
+    id: correction
+    attributes:
+      label: "Correction and supporting source / 更正内容与信息来源"
+      description: "Link to the manuscript release, paper repository, arXiv record or journal page when available. / 如有，请附稿件发布页、论文仓库、arXiv 或期刊页面。"

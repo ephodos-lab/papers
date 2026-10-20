@@ -1,9 +1,9 @@
-## Paper and version / 论文与版本
+## Catalogue record / 论文记录
 
-<!-- Paper ID and affected release, or describe an archive-wide change. -->
+<!-- Paper ID and record path, or describe a catalogue-wide change. Manuscript changes belong in the individual paper repository. -->
 
 ## Changes / 修改内容
 
-## Reason and verification / 修改理由与核查
+## Sources and link verification / 信息来源与链接核查
 
-<!-- For changes to mathematics, explain the argument and how it was checked. -->
+<!-- Link to the paper repository, exact release or publication supporting the change. For a new release, confirm signature and required-asset verification. -->

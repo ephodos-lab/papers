@@ -6,65 +6,67 @@
 
 # Ephodos Lab Papers
 
-Research manuscripts and essential supplementary materials from [Ephodos Lab](https://github.com/ephodos-lab).
+Catalogue and publication records for papers from [Ephodos Lab](https://github.com/ephodos-lab).
 
-Each paper has its own directory, identifier and version history. Published versions are available as immutable [GitHub Releases](https://github.com/ephodos-lab/papers/releases).
+Each paper is published in its own repository. Complete manuscripts and essential supplements are released there as immutable GitHub Releases. This catalogue records the authors, repository, versions and publication links.
 
 ## Papers
 
 No manuscripts have been released yet.
 
-| Paper ID | Title and authors | First release | Latest release | Publication |
-| --- | --- | --- | --- | --- |
+| Paper ID | Title and authors | Repository | First release | Latest release | Publication / status |
+| --- | --- | --- | --- | --- | --- |
 
-Entries are added when the first version of a paper is released. Later arXiv, DOI and journal links are added to the same entry.
+Entries are added after a paper's first release has been published and verified. Each entry links to a detailed record under the year it was first catalogued. Later arXiv, DOI and journal links are added to the same record.
 
 ## Reading and citing
 
-- Use a paper's release page to download a specific version and its required supplements.
-- The default branch contains the current working files; they may change between releases.
+- Follow the paper's repository link for its current manuscript and discussion.
+- Use a release in that repository to download and cite a specific version and its required supplements.
 - Cite the authors, full title, paper ID, version and release URL. Use the journal or arXiv reference when appropriate, while retaining a version link when discussing an earlier manuscript.
-- Report an error or ask a question through [Issues](https://github.com/ephodos-lab/papers/issues/new/choose), identifying the paper and version.
+- Report mathematical errors or manuscript questions in the individual paper's repository. Report catalogue errors through this repository's [Issues](https://github.com/ephodos-lab/papers/issues/new/choose).
 
 ## Repository layout
 
 ```text
 2026/
-  EL-2026-NNN-short-topic/
-    README.md
-    paper.pdf
-    supplements/               # when required by the paper
+  README.md                    # annual index
+  EL-2026-NNN.md               # one metadata record per paper
 docs/
-  PUBLISHING.md                # publication and verification guide
+  PUBLISHING.md                # separate-repository publishing guide
 templates/
-  paper-README.md              # copy into a new paper directory
+  paper-record.md              # copy into the annual catalogue
+  paper-README.md              # copy into an individual paper repository
 ```
 
-The example directory above is a naming pattern, not a published paper. Source files may be included when they form part of the release.
+The paper record above is a naming pattern, not a published entry. Manuscripts and supplements belong in the individual paper repositories.
 
-Release tags include the paper ID: `EL-2026-NNN-v1`, `EL-2026-NNN-v2`, and so on. A new paper starts its own sequence.
+For example, a paper with ID `EL-2026-001` may use the repository `ephodos-lab/paper-2026-001-short-topic`, with releases `v1`, `v2`, and so on. Each paper starts its own version sequence.
 
 ## Publishing and corrections
 
 See the [publishing guide](docs/PUBLISHING.md) and [contribution guide](CONTRIBUTING.md).
 
-Repository directories and working files can be reorganized after publication. An immutable release keeps that version's attached files and its tag fixed; a correction is published as a new version.
+Each paper repository enables release immutability before its first publication. A revision is published there as a new release, then its catalogue record is updated. The first-release link is retained.
+
+This catalogue does not publish manuscript releases. Its records and directory structure can be maintained independently of the paper repositories.
 
 ## Authors and reuse
 
-Authors, affiliations and any AI use are stated in each manuscript. Hosting a paper under this organization does not replace the paper's authorship statement.
+Authors, affiliations and any AI use are stated in each manuscript. Catalogue metadata should agree with the released manuscript.
 
-Reuse terms are stated for each paper and, where necessary, separately for its supplements. This repository does not apply one blanket software license to all manuscripts.
+Reuse terms are stated in each paper repository and, where necessary, separately for its supplements. Listing a paper here does not change those terms.
 
 <details>
 <summary><b>中文说明</b></summary>
 
-本仓库集中公开 Ephodos Lab 的论文稿件及必要附件。
+本仓库是 Ephodos Lab 的论文总索引，只保存论文记录和链接。
 
-- 每篇论文一个目录，使用独立编号；目录中的文件可以继续修改和整理。
-- 正式版本以不可变 Release 发布。下载、引用或讨论某个版本时，请链接到对应的 Release。
-- 修订稿发布为同一论文的下一版本，并保留先前发布的文件。
-- 首次公开版本与后续 arXiv、DOI、期刊信息分别记录。
+- 每篇论文一个独立仓库，完整稿件和必要附件放在该论文仓库中。
+- 各论文仓库分别启用不可变 Release，使用自己的 `v1`、`v2` 等版本标签。
+- 总索引记录论文编号、作者、独立仓库、首次发布、最新版本，以及 arXiv、DOI、期刊信息。
+- 修订稿在论文仓库发布新版本后，同步更新总索引；首次发布链接保留。
+- 数学内容的勘误与讨论放在对应论文仓库；总索引的问题在本仓库反馈。
 
 目前尚无已发布论文。添加稿件和发布版本的方法见[发布指南](docs/PUBLISHING.md)。
 

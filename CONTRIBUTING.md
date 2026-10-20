@@ -1,25 +1,26 @@
 # Contributing to Ephodos Lab Papers
 
-This repository publishes manuscripts and essential supplements from Ephodos Lab. Issues and pull requests may be written in English or Chinese.
+This repository maintains the catalogue and publication records for Ephodos Lab papers. Issues and pull requests may be written in English or Chinese.
 
-## Add or revise a manuscript
+## Add or update a catalogue record
 
-- Use the [publishing guide](docs/PUBLISHING.md) and [paper description template](templates/paper-README.md).
-- Identify the authors and the material they approve for release.
-- Include the complete manuscript and any files required to understand or check its claims.
-- State the applicable reuse terms for the manuscript and its supplements.
-- For a revision, explain the mathematical and editorial changes and identify the earlier version.
+- Publish the manuscript and essential supplements in their own paper repository, following the [publishing guide](docs/PUBLISHING.md).
+- After the first release is published and verified, copy the [record template](templates/paper-record.md) into the relevant year directory and fill in the actual metadata and links.
+- Match the title and author order to the released manuscript. Record any earlier public version explicitly.
+- Add the record to this repository's main table and annual index.
+- When a revision is released, update the latest-version link and append its version history while retaining the first-release link.
+- Add or correct arXiv, DOI, journal and withdrawal information as it becomes available.
 
-Maintainers prepare and verify the immutable release before updating the public catalogue. Changes to the default branch are working changes until a corresponding version is released.
+Submit manuscript files, supplements and mathematical revisions to the individual paper repository. Catalogue records do not replace the released manuscript or its authorship statement.
 
-## Report an error or ask a question
+## Report an error
 
-Open an issue and identify the paper ID, release tag or release URL. Give the page, theorem, proof step or supplementary file involved and explain the concern. A proposed correction is welcome, but is not required.
+For an incorrect catalogue entry or broken link, open an issue here and identify the paper ID or record URL. Include the source supporting the correction when available.
 
-A pull request changing mathematics should explain the argument supporting the change and how it was checked. Changes to wording or repository organization should describe their purpose.
+For a question about a theorem, proof or supplementary file, use the issue tracker in the paper's own repository and identify the exact release and location.
 
 ## 中文
 
-新增论文和修订稿请按[发布指南](docs/PUBLISHING.md)准备。默认分支中的修改是工作稿，正式版本由维护者通过不可变 Release 发布并核验。
+本仓库只维护论文记录与索引。完整稿件及必要附件请放在各论文的独立仓库中，按[发布指南](docs/PUBLISHING.md)发布并核验，再更新本仓库的记录、首页和年度索引。
 
-反馈问题时，请注明论文编号、具体版本和位置，并说明问题所在。涉及数学内容的修改需要给出理由及核查说明。修订稿保留原论文编号，并发布为下一版本。
+目录信息有误或链接失效，可在本仓库反馈；论文数学内容的问题请到对应论文仓库反馈，注明具体版本和位置。修订稿继续使用原论文编号，首次发布链接保留。
